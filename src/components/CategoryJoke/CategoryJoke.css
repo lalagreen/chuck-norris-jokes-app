@@ -1,0 +1,14 @@
+.categories-card {                     margin: 0 -9px 0 -9px;               padding: 0;                          overflow: hidden;                    background-color: #f9f9f9;         }
+.category-title {      
+  width: 190px;
+  height: 20px;
+  margin: 0 8px 7.5px;
+  font-family: montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #5e5e5e;
+}
