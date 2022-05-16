@@ -5,7 +5,6 @@ import './CategoryJoke.css'
 export function CategoryJoke({categories, onButtonClick}) {
 
     return (
-        <>
             <div className="categories-card">
                 <p className="category-title">Categories</p>
                 {
@@ -13,7 +12,6 @@ export function CategoryJoke({categories, onButtonClick}) {
                     <CategoryJokeList item={cat.value} onButtonClick={onButtonClick} />
                 )}
             </div>
-        </>
     )
 }
 

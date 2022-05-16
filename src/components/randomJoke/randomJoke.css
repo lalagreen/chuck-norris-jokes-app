@@ -1,0 +1,10 @@
+.styleRandom{
+    background-color: beige;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    width: 130px;
+}
+.Random-card { 
+    margin: 0 -9px 0 -9px;               padding: 0;                          overflow: hidden;                    background-color: #f9f9f9;       }

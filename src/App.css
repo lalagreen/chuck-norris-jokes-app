@@ -1,29 +1,58 @@
 .header {
   overflow: hidden;
-  margin: -9px -9px auto -9px;         background-image: url('/bitmap@2x.png');                                  padding: 20px 10px;
+  margin: -9px -9px auto -9px;         padding: 20px 10px;
   width: 100%;
   display: flex;                       align-items: center;                 justify-content: center;           }
-.Header-title {                        width: 350px;
+.header-title {                        width: 350px;
   height: 72px;
   margin: 0 174px 0 57px;              font-family: montserrat;             font-size: 48px;                     font-weight: normal;
   font-stretch: normal;                font-style: normal;                  line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
   color: #cfb995;
-}                                                                     
-.joke-container:after {                content: "";                         display: table;                      clear: both;                       }
+}
+.joke-container {                      margin: 0 -9px 0 -9px;
+  padding: 0;
+  overflow: hidden;                    background-color: #f9f9f9;         }
+.joke-card:after {      
+  content: "";                         display: table;                      clear: both;                       }
 .joke {
   float: left;                         width: 30%;
   height: 154px;                       padding-left: 10px;
   padding-top: 20px;
-  margin: 10px 10px auto auto;         background-color: #cfb995
+  margin: 10px 10px auto 10px;         background-color: #cfb995
 }
 .single-joke {                         width: 700px;
   height: 254px;                       margin: 10px 14px 8px 0;
   font-family: montserrat;             padding: 20px;                       background-color: #cfb995;         }
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */  @media screen and (max-width: 600px) {                                      .joke {                                width: 100%;                         margin-left: auto;                   margin-right: auto;                }                                  }                             
+.clap-container {
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+}
+.clap-up {                             width: 25px;                         height: 25px;
+  position: relative;                  border-radius: 50%;                  border: none;
+}
+.clap-down {                           width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 50%;
+  border: none;
+}
+button {                               float: left;
+  margin: 0 15px;
+}
+span {
+  padding-left: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */  @media screen and (max-width: 600px) {                                      .joke {                                width: 100%;                         margin-left: auto;                   margin-right: auto;                }                                  }
+@media screen and (max-width: 600px) {                                      .category {                            float: none;                         display: block;                      text-align: left;
+    width: 100%;                         margin: 0;                           padding: 14px;                     }                                  }
 @media screen and (max-width: 600px) {                                      .header-title {                        font-size: 24px;                     margin: 0 0 0 ;                    }                                  }
-@media screen and (max-width: 600px) {                                      .single-joke {                         width: 100%;
+@media screen and (max-width: 600px) {                                      .single-joke {                         width: 70%;
     height: auto;                      }                                  }
-.footer {                              overflow: hidden;                    margin: 10px -9px auto -9px;         background-image: url('/bitmap_2.pn
-g');                                   padding: 20px 10px                 }
+.footer {                              overflow: hidden; 
+  margin: 10px -9px auto -9px;         padding: 20px 10px;
+  height: 5px;
+}
